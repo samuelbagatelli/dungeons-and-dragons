@@ -5,7 +5,7 @@ class Necromancer extends Archetype {
   private static _instances = 0;
   private _energyType: EnergyType = 'mana';
 
-  constructor(name: string, special: number, cost: number) {
+  constructor(name: string, special = 0, cost = 0) {
     super(name, special, cost);
     Necromancer._instances += 1;
   }
@@ -14,7 +14,7 @@ class Necromancer extends Archetype {
     return this._energyType;
   }
 
-  static createdAchetypeInstances(): number {
+  static createdArchetypeInstances(): number {
     return Necromancer._instances;
   }
 }
