@@ -14,7 +14,7 @@ class Elf extends Race {
   }
 
   static createdRacesInstances(): number {
-    return this._instances;
+    return Elf._instances;
   }
 }
 

@@ -14,7 +14,7 @@ class Orc extends Race {
   }
 
   static createdRacesInstances(): number {
-    return this._instances;
+    return Orc._instances;
   }
 }
 

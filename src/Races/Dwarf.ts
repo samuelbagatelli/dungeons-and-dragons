@@ -14,7 +14,7 @@ class Dwarf extends Race {
   }
 
   static createdRacesInstances(): number {
-    return this._instances;
+    return Dwarf._instances;
   }
 }
 

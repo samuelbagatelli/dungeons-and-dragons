@@ -14,7 +14,7 @@ class Halfling extends Race {
   }
 
   static createdRacesInstances(): number {
-    return this._instances;
+    return Halfling._instances;
   }
 }
 
