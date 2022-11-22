@@ -1,15 +1,15 @@
 import IEnergy from '../Energy';
 
-interface Fighter {
+interface IFighter {
   lifePoints: number;
   strength: number;
   defense: number;
   energy?: IEnergy;
 
-  attack(enemy: Fighter): void;
-  special?(enemy: Fighter): void;
+  attack(enemy: IFighter): void;
+  special?(enemy: IFighter): void;
   levelUp(): void;
   receiveDamage(attackPoints: number): number;
 }
 
-export default Fighter;
+export default IFighter;

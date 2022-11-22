@@ -1,9 +1,9 @@
-interface SimpleFighter {
+interface ISimpleFighter {
   lifePoints: number;
   strength: number;
 
-  attack(enemy: SimpleFighter): void;
+  attack(enemy: ISimpleFighter): void;
   receiveDamage(attackPoints: number): number;
 }
 
-export default SimpleFighter;
+export default ISimpleFighter;
