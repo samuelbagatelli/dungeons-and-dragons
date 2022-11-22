@@ -57,6 +57,8 @@ class Character implements IFighter {
 
     if (this._lifePoints <= 0) this._lifePoints = -1;
 
+    if (damage <= 0) this._lifePoints -= 1; 
+
     return this._lifePoints;
   }
 
